@@ -171,18 +171,6 @@ qqnorm(residuals_ols, main = "Q-Q Plot of Residuals")
 qqline(residuals_ols, col = "red")  # Reference line
 ```
 
-**ANALYSIS:** 
-
-In general, the assumption check plots above indicate potential issues with the OLS model:
-
--   Heteroscedasticity: The residuals show a non-constant variance, with wider spread at lower fitted values and clustering at higher fitted values. This violates the assumption of homoscedasticity, which is critical for reliable statistical inference.
-
--   Outliers: There are notable outliers that could unduly influence the model's estimates and reduce its predictive accuracy.
-
--   Possible Non-linearity: Although there is no strong visible pattern in the residuals, some clustering may hint at potential non-linearity or omitted variable bias.
-
-Conclusion: The model may not fully satisfy the assumptions of linear regression. To address this issues, the alternative modeling approaches will be applied and also be compared with the OLS metrics.
-
 
 **MODEL 2: Fitting a non-linear model using Support Vector Regression**
 
